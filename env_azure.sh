@@ -1,14 +1,18 @@
-# Environment variable containing the AWS Access Key
-export TF_VAR_ENV_AWS_ACCESS_KEY="<AWS Access Key>"
+# Environment variable containing the Azure Tenant
+export TF_VAR_ENV_AZURE_TENANT="<azure tenant>"
 
-# Environment variable containing the AWS Secret Access Key
-export TF_VAR_ENV_AWS_SECRET_ACCESS_KEY="<AWS Secret Access Key>"
+# Environment variable containing the Azure Client ID
+export TF_VAR_ENV_AZURE_CLIENT_ID="<azure client id>"
 
-# Environment variable containing the AWS Region
-export TF_VAR_ENV_AWS_REGION="<AWS Region>"
+# Environment variable containing the Azure Subscription ID
+export TF_VAR_ENV_AZURE_SUBSCRIPTION_ID="<azure subscription id>"
 
-# Environment variable containing the AWS Zone
-export TF_VAR_ENV_AWS_ZONE="<AWS Zone>"
+# Environment variable containing the Azure Secret
+export TF_VAR_ENV_AZURE_SECRET="<azure secret>"
+
+# Environment variable containing the Azure Location
+# Example: westeurope
+export TF_VAR_ENV_AZURE_LOCATION="<azure location>"
 
 # Environment variable containing the password for Rancher
 export TF_VAR_ENV_RANCHER_SEVER_ADMIN_PASSWORD="<admin password for SUSE Rancher>"
