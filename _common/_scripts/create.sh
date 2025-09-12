@@ -14,7 +14,7 @@ time_start="$(date +"%T")"
 export TF_LOG="ERROR" # https://developer.hashicorp.com/terraform/internals/debugging
 SECONDS=0
 
-terraform apply --auto-approve -parallelism=${NUMBER_OF_PARALLEL_VM_ACTIONS}
+terraform apply -parallelism=${NUMBER_OF_PARALLEL_VM_ACTIONS}
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -ne 0 ]; then
