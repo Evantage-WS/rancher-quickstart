@@ -28,7 +28,6 @@ variable ENV_AZURE_LOCATION {
   default     = null
 }
 
-# Azure gave me a problem with ED25519
 variable ENV_SSH_PUBLIC_KEY_FILE {
   description = "Environment variable containing the location of the RSA public key file for ssh access"
   type        = string
@@ -36,7 +35,6 @@ variable ENV_SSH_PUBLIC_KEY_FILE {
   default     = null
 }
 
-# Azure gave me a problem with ED25519
 variable ENV_SSH_PRIVATE_KEY_FILE {
   description = "Environment variable containing the location of the RSA private key file for ssh access"
   type        = string
