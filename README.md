@@ -29,7 +29,8 @@ What I changed:
 ### Installing
 
 * Clone this repository
-* Create the needed environment variables with the credentials (see the scripts ending on env.sh) and execute it
+* Create the needed environment variables with the credentials (see the scripts starting with  env-*.sh) and execute it
+* For GCP, you do need to login prior to executing via `gcloud`
 * Make a copy of one of the directories in `_master_template` to a directory in the `_datacenter` directory. I strongly suggest to do this and not edit the content of the `_master_templates` directory
 * Edit the values in `config.yaml` in the newly created directory
 
