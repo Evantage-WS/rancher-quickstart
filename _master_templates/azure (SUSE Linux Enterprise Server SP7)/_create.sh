@@ -18,4 +18,4 @@ echo "########## - ruff check --fix --select W605                               
 echo "###############################################################################################################################"
 echo
 
-source "../../../_common/_scripts/create.sh"
+source "../../_common/_scripts/create.sh"

@@ -7,7 +7,7 @@ locals {
 }
 
 module "cloud_azure" {
-  source                                  = "../../../_common/azure"
+  source                                  = "../../_common/azure"
 
   # Azure gave me a problem with ED25519
   config_file                             = local.config_file
