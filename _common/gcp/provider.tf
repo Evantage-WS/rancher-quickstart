@@ -2,27 +2,27 @@ terraform {
   required_providers {
     google = {
       source        = "hashicorp/google" # https://registry.terraform.io/providers/hashicorp/google/latest
-      version       = "7.2.0"
+      version       = "7.17.0"
     }
     local = {
       source        = "hashicorp/local" # https://registry.terraform.io/providers/hashicorp/local/latest
-      version       = "2.5.3"
+      version       = "2.6.1"
     }
     helm = {
       source        = "hashicorp/helm" # https://registry.terraform.io/providers/hashicorp/helm/latest
-      version       = "3.0.2"
+      version       = "3.1.1"
     }
     rancher2 = {
       source        = "rancher/rancher2" # https://registry.terraform.io/providers/rancher/rancher2/latest
-      version       = "8.1.0"
+      version       = "13.1.4"
     }
     ssh = {
       source        = "loafoe/ssh" # https://registry.terraform.io/providers/loafoe/ssh/latest/docs/resources/resource
       version       = "2.7.0"
     }
     null = {
-      source = "hashicorp/null" # https://registry.terraform.io/providers/hashicorp/null/latest
-      version = "3.2.4"
+      source        = "hashicorp/null" # https://registry.terraform.io/providers/hashicorp/null/latest
+      version       = "3.2.4"
     }
   }
   required_version  = ">= 1.0.0"
