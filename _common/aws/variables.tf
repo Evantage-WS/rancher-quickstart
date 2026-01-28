@@ -18,6 +18,11 @@ variable aws_zone {
   default     = null
 }
 
+variable aws_session_token {
+  type        = string
+  default     = null
+}
+
 variable ssh_public_key_file {
   type        = string
   sensitive   = true

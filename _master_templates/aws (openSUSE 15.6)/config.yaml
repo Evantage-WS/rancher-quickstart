@@ -4,7 +4,7 @@ aws_instance_type_rancher:                                      <change me> t3a.
 aws_instance_type_downstream:                                   <change me> t3.medium
 aws_node_username:                                              ec2-user # Do not change for AWS
 aws_prefix:                                                     <change me> some-unique-name
-aws_creator_tag:                                                <name of creator> Luke Skywalker
+aws_creator_tag:                                                <change me> Luke Skywalker
 
 name_cloud_provider:                                            aws # used in kubeconfig filenames
 kubernetes_cluster_name:                                        <change me> rancher
@@ -12,18 +12,18 @@ downstream_kubernetes_cluster_name:                             <change me> down
 kubeconfig_location:                                            ~/.kube
 
 # https://artifacthub.io/packages/helm/cert-manager/cert-manager
-cert_manager_version:                                           1.18.2
+cert_manager_version:                                           1.19.2
 
 # https://artifacthub.io/packages/helm/rancher-stable/rancher
 rancher_helm_repository:                                        https://releases.rancher.com/server-charts/stable
-rancher_version:                                                2.12.1
+rancher_version:                                                2.13.1
 
 # Kubernetes version to use for Rancher server cluster
 # https://github.com/rancher/k3s/releases
-rancher_kubernetes_version:                                     v1.32.5+k3s1
-downstream_kubernetes_cluster_version:                          v1.32.5+k3s1
+rancher_kubernetes_version:                                     v1.33.6+k3s1
+downstream_kubernetes_cluster_version:                          v1.33.6+k3s1
 
 # https://artifacthub.io/packages/helm/neuvectorcharts/core
 # https://artifacthub.io/packages/helm/neuvectorcharts/crd
 install_suse_security:                                          true
-suse_security_version:                                          5.4.6
+suse_security_version:                                          5.4.8

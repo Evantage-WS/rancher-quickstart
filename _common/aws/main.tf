@@ -24,7 +24,7 @@ resource "null_resource" "create_destroy_script" {
     working_dir = path.root
     command = <<EOT
     OUTPUT_FILE='_destroy.sh'
-    echo '#!/usr/bin/env bash\n\n' > $${OUTPUT_FILE}
+    echo '#!/usr/bin/env bash\n' > $${OUTPUT_FILE}
     echo './files/destroy_aws_resources.sh Environment "${local.config.aws_creator_tag} - ${local.config.kubernetes_cluster_name}"' >> $${OUTPUT_FILE}
     echo 'EXIT_CODE=$?' >> $${OUTPUT_FILE}
     echo 'if [ $EXIT_CODE -ne 0 ]; then' >> $${OUTPUT_FILE}

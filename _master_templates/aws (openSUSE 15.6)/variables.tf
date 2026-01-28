@@ -22,6 +22,12 @@ variable ENV_AWS_ZONE {
   default     = null
 }
 
+variable ENV_AWS_SESSION_TOKEN {
+  description = "Environment variable containing the AWS Session Token"
+  type        = string
+  default     = null
+}
+
 variable ENV_SSH_PUBLIC_KEY_FILE {
   description = "Environment variable containing the location of the public key file for ssh access"
   type        = string

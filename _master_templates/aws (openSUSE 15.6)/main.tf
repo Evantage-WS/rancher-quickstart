@@ -16,6 +16,7 @@ module "cloud_aws" {
   aws_zone                                = var.ENV_AWS_ZONE
   aws_access_key                          = var.ENV_AWS_ACCESS_KEY
   aws_secret_access_key                   = var.ENV_AWS_SECRET_ACCESS_KEY
+  aws_session_token                       = var.ENV_AWS_SESSION_TOKEN
   rancher_server_admin_password           = var.ENV_RANCHER_SERVER_ADMIN_PASSWORD
   suse_security_admin_password            = var.ENV_SUSE_SECURITY_ADMIN_PASSWORD
 }

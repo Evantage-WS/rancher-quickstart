@@ -2,19 +2,19 @@ terraform {
   required_providers {
     aws = {
       source        = "hashicorp/aws" # https://registry.terraform.io/providers/hashicorp/aws/latest
-      version       = "6.13.0"
+      version       = "6.28.0"
     }
     local = {
       source        = "hashicorp/local" # https://registry.terraform.io/providers/hashicorp/local/latest
-      version       = "2.5.3"
+      version       = "2.6.1"
     }
     helm = {
       source        = "hashicorp/helm" # https://registry.terraform.io/providers/hashicorp/helm/latest
-      version       = "3.0.2"
+      version       = "3.1.1"
     }
     rancher2 = {
       source        = "rancher/rancher2" # https://registry.terraform.io/providers/rancher/rancher2/latest
-      version       = "8.1.0"
+      version       = "13.1.4"
     }
     ssh = {
       source        = "loafoe/ssh" # https://registry.terraform.io/providers/loafoe/ssh/latest/docs/resources/resource
@@ -32,6 +32,7 @@ provider "aws" {
   access_key        = var.aws_access_key
   secret_key        = var.aws_secret_access_key
   region            = var.aws_region
+  token             = var.aws_session_token
 }
 
 provider "helm" {
