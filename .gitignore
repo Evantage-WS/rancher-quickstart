@@ -14,7 +14,8 @@ modules-dev/
 *.iml
 *.test
 *.iml
-**/_datacenter_ws/*
 **/.obsidian
 **/.terraform.lock.hcl
 **/terraform.tfstate
+**/_datacenter
+**/config.yaml.wilco
