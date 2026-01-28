@@ -2,19 +2,19 @@ terraform {
   required_providers {
     azurerm = {
       source        = "hashicorp/azurerm" # https://registry.terraform.io/providers/hashicorp/azurerm/latest
-      version       = "4.44.0"
+      version       = "4.58.0"
     }
     local = {
       source        = "hashicorp/local" # https://registry.terraform.io/providers/hashicorp/local/latest
-      version       = "2.5.3"
+      version       = "2.6.1"
     }
     helm = {
       source        = "hashicorp/helm" # https://registry.terraform.io/providers/hashicorp/helm/latest
-      version       = "3.0.2"
+      version       = "3.1.1"
     }
     rancher2 = {
       source        = "rancher/rancher2" # https://registry.terraform.io/providers/rancher/rancher2/latest
-      version       = "8.1.0"
+      version       = "13.1.4"
     }
     ssh = {
       source        = "loafoe/ssh" # https://registry.terraform.io/providers/loafoe/ssh/latest/docs/resources/resource
