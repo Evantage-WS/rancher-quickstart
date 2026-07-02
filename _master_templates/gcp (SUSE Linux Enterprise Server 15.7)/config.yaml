@@ -13,18 +13,18 @@ downstream_kubernetes_cluster_name:                             <change me> down
 kubeconfig_location:                                            ~/.kube
 
 # https://artifacthub.io/packages/helm/cert-manager/cert-manager
-cert_manager_version:                                           1.19.2
+cert_manager_version:                                           1.20.3
 
 # https://artifacthub.io/packages/helm/rancher-stable/rancher
 rancher_helm_repository:                                        https://releases.rancher.com/server-charts/stable
-rancher_version:                                                2.13.1
+rancher_version:                                                2.14.3
 
 # Kubernetes version to use for Rancher server cluster
 # https://github.com/rancher/k3s/releases
-rancher_kubernetes_version:                                     v1.33.6+k3s1
-downstream_kubernetes_cluster_version:                          v1.33.6+k3s1
+rancher_kubernetes_version:                                     v1.35.6+k3s1
+downstream_kubernetes_cluster_version:                          v1.35.6+k3s1
 
 # https://artifacthub.io/packages/helm/neuvectorcharts/core
 # https://artifacthub.io/packages/helm/neuvectorcharts/crd
 install_suse_security:                                          true
-suse_security_version:                                          5.4.7
+suse_security_version:                                          5.5.3
